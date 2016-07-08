@@ -1,0 +1,6 @@
+<h2> Employee Listings </h2>
+<ul>
+  {{#each model as |team|}}
+    {{#link-to 'team' team tagName='li'}} {{team.name}} {{/link-to}}
+  {{/each}}
+</ul>
